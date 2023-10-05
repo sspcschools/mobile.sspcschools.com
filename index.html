@@ -42,5 +42,19 @@
   <footer>
     <p>&copy; 2023 Sunshine State Public Schools</p>
   </footer>
+
+  <script>
+    function redirectDesktop() {
+      if (window.innerWidth > 767) {  // Adjust this value according to your needs
+        window.location.href = 'https://sspcschools.com';
+      }
+    }
+
+    // Call the function when the page loads
+    redirectDesktop();
+
+    // Call the function whenever the window is resized
+    window.addEventListener('resize', redirectDesktop);
+  </script>
 </body>
 </html>
